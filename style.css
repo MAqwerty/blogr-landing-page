@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Ubuntu ;
+    src: url(./Fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family:Overpass ;
+    src: url(./Fonts/Overpass/static/Overpass-Regular.ttf);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 66.6vh;
+    background-image:url(./images/bg-pattern-intro-desktop.svg ) ,linear-gradient(  to right , hsl(13, 100%, 72%) , hsl(353, 100%, 62%));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 150px ;
+
+}
+
+.logo{
+    display: inline-block;
+    margin: 4%;
+    margin-left: 7%;
+}
+
+.nav{
+    display: inline-flex;
+    position: absolute;
+    margin: 2%;
+    margin-top: 4.5%;
+}
+
+.nav-item{
+    margin-right: 30px;
+}
+
+.ul-list{
+    list-style: none;
+    display: none;
+    background-color: white;
+    line-height: 2.5rem;
+    border-radius: 10px;
+    position: absolute;
+    padding: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Topic{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin-bottom: 15%;
+    font-size: large;
+    font-family: Ubuntu , sans-serif;
+    cursor: pointer;
+}
+
+.nav-item:hover > .ul-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-item:hover > .icon-arrow{
+    transform: rotateX(180deg);
+}
+
+.nav-item:hover > .Topic{
+        text-decoration: white solid 3px underline;     
+}
+
+.ul-list  li  a{
+    color: black;
+    font-family: Ubuntu , sans-serif;
+    font-size: large;
+}
+
+li:hover{
+    font-weight: bold;
+}
+
+
+.Account{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    margin: 4%;
+    margin-right: 7%;
+}
+
+.Login{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: rgb(207, 207, 207);
+    font-family: Ubuntu , sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.Sign-Up{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    font-family: Ubuntu , sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.AccountCHCK{
+    color: #ff515b;
+    background-color: white;
+}
+
+.Login:hover,.Sign-Up:hover{
+    color: #fff;
+    background-color: #ff7b86;
+}
+
+
+.h1-header{
+    color: white;
+    font-family: Overpass , sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 4rem;
+    margin: 1%;
+}
+.p-header{
+    color: white;
+    font-size: 1.25rem;
+    font-family: Overpass , sans-serif;
+    text-align: center;
+}
+
+
+.start-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+
+.Start-free{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: #ff515b;
+    background-color: white;
+    font-family: Ubuntu , sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+.Learn-more{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    font-family: Ubuntu , sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: solid white 1px;
+    margin-left: 20px;
+
+}
+
+
+.Start-free:hover{
+    color: #fff;
+    background-color: #ff7b86;
+}
+
+.Learn-more:hover{
+    color: #ff515b;
+    background-color: white;
+}
+
+.h1-main{
+    text-align: center;
+    margin-top:10% ;
+    color: #1d3d56;
+}
+
+.article1{
+    padding: 5%;
+    padding-left: 10%;
+    font-family: Overpass , sans-serif;
+}
+
+.article1 h3{
+    color: #1d3d56;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.article2{
+    background-image: url(./images/illustration-editor-desktop.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    padding: 0;
+
+
+}
+
+.article3{
+    background-color:#393a56 ;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-image: url(./images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position-x: -65%;
+    background-position-y: 90%;
+    height: 400px;
+    margin-top: 75px;
+    padding: 0;
+    border-top-right-radius:150px;    
+    border-bottom-left-radius:150px;    
+}
+
+.phones{
+    display: inline-block;
+    position: relative;
+    left: 10%;
+}
+
+.article3 p{
+    color: white;
+    font-family: Overpass , sans-serif;
+
+}
+
+.article3 h3{
+    color: white;
+    font-family: Overpass , sans-serif;
+    margin-bottom:5%;
+
+}
+
+.text-main{
+    position: relative;
+    width: 37%;
+    margin: 10%;
+}
+
+.article4{
+    background-image: url(./images/illustration-laptop-desktop.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 600px;
+
+}
+
+.article5{
+    font-family: Overpass , sans-serif;
+    padding: 5%;
+}
+
+.article5 h3{
+    color: #1d3d56;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 12px;   
+    margin-top:10%;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40vh;
+    background-color: #24242c;
+    padding:5%;
+    border-top-right-radius:150px;    
+
+}
+
+.ul-list-footer{
+    list-style: none;
+    padding: 0;
+}
+
+.ul-list-footer li a{
+color: rgb(170, 170, 170);
+line-height: 2.5rem;
+
+}
+
+.ul-list-footer li a:hover{
+    color: white;
+    text-decoration: white solid 3px underline;    
+ 
+    }
+
+.logofooter{
+    width: 100px;
+    height: 40px;
+}
+
+
+.mobileMENU{display: none;}
+
+@media only screen and (max-width: 950px){
+
+.desktopMENU{display: none;}
+.mobileMENU{display: flex;}
+
+    .mobileMENU{
+        display: none;
+        position: relative;
+        margin: auto;
+        width: 90% ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }   
+
+    .nav-item-mobile{
+        position: relative;
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        height: 50px;
+    }
+
+    .nav-item-mobile:hover{
+        height: max-content;
+    }
+
+    .Topic-mobile{
+        display: inline-block;
+        color: black;
+        font-weight: bold;
+        font-family: Ubuntu , sans-serif;
+        cursor: pointer;
+    }
+
+    .ul-list-mobile{
+        display: inline-block;
+        transform: translateY(-1500px);
+        list-style: none;
+        background-color: #efeff1;
+        line-height: 2.5rem;
+        border-radius: 10px;
+        position: relative;
+        margin: auto;
+        width: 90%; 
+        height:1px ;
+        margin-bottom: 4%;
+        padding: 2%;
+    }
+
+    .ul-list-mobile  li a{
+        color: rgb(100, 100, 100);  
+        font-family: Ubuntu , sans-serif;
+        font-size: large;
+    }
+    
+    .line-mobile{
+        width: 90%;
+        height: 1px;
+        background-color: lightgrey;
+        margin-bottom: 3%;
+    }
+
+    .AccountCHCK-mobile{
+        color: white;
+        background-image:linear-gradient(  to right , hsl(13, 100%, 72%) , hsl(353, 100%, 62%));    
+    }
+
+    .Login-mobile{
+        margin-bottom: 2%;
+        color: black;
+    }
+    
+    li a:hover{
+        font-weight: bold;
+        color: black;
+    }
+
+    .nav-item-mobile:hover > .ul-list-mobile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        transition: .2s all ease;
+        transform: translateY(0%);
+    }
+
+    .nav-item-mobile:hover > .icon-arrow{
+        transform: rotateX(180deg);
+    }
+
+    .nav-item-mobile:hover > .Topic-mobile{
+        color: rgb(100, 100, 100);  
+    }
+
+    .icon-hamburger{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 4%;
+        margin-right:7%;
+        }
+
+    .icon-close{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 4%;
+        margin-right:7%;
+        }
+            
+    .shake{
+        animation: shake .25s linear;
+        }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+    .article3{
+        background-color:#393a56 ;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        background-image: url(./images/bg-pattern-circles.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 630px;
+        margin-top: 250px;
+        padding: 0;
+        border-top-right-radius:100px;    
+        border-bottom-left-radius:100px;    
+    }
+
+    .phones{
+        position: initial;
+    }
+    
+    .text-main{
+        position: relative;
+        text-align: center;
+        padding-top: 15%;
+        bottom: 25%;
+        width: 70%;
+    }
+
+    .article3 p{
+        color: white;
+        font-family: Overpass , sans-serif;
+
+    }
+
+    .article3 h3{
+        color: white;
+        font-family: Overpass , sans-serif;
+        margin-bottom:5%;
+
+    } 
+
+}
+
+
+.mobileMAIN{
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px){
+
+    main{
+        text-align: center;
+    }
+
+    .desktopMAIN{
+        display: none;
+    }
+
+
+    .mobileMAIN{
+        display: block;
+    }
+
+    .article2{
+        margin-top: 7%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600PX){
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    .MENUfooter{
+        margin: auto;
+        padding: 2%;
+        text-align: center;
+    }
+        
+    .logofooter{
+        width: 100px;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 5%; 
+    }
+
+
+}
